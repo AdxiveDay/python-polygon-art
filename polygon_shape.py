@@ -46,6 +46,6 @@ class Polygon:
         self.x = x
         self.y = y
 
-        self._pen.clear()
+        self.t1.clear()
 
         self.draw()

@@ -39,7 +39,7 @@ positions_7 = [
 ]
 
 for x, y in positions_6:
-    sides = 4
+    sides = rng.randint(3,6)
     side_length = 50
     color = colors[2]
     pen_size = rng.randint(1, 7)
@@ -54,7 +54,7 @@ for x, y in positions_6:
     polygons.append(polygon)
     
 for x, y in positions_7:
-    sides = 4
+    sides = rng.randint(3,6)
     side_length = 50
     color = colors[5]
     pen_size = rng.randint(1, 7)

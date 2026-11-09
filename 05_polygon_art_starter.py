@@ -16,16 +16,55 @@ colors = ["cyan", "turquoise", "orange", "yellowgreen", "deepskyblue",
           "salmon", "plum", "lightgreen", "gold", "pink", "white"]
 rng = random.Random(12)
 
-polygons = []  # Hold references so the Polygon objects remain accessible.
-for _ in range(20):
-    sides = rng.randint(3, 6)
-    side_length = rng.randint(35, 120)
-    x = rng.randint(-350, 260)
-    y = rng.randint(-225, 180)
-    color = rng.choice(colors)
+polygons = []
+
+positions_6 = [
+    (-220, 180),
+    (-280, 100),
+    (-290, 0),
+    (-220, -100),
+    (-120, -100),
+    (-120, 0),
+    (-200, 0)
+]
+
+positions_7 = [
+    (100, 180),
+    (200, 180),
+    (300, 180),
+    (250, 80),
+    (200, -20),
+    (150, -120),
+    (120, -180)
+]
+
+for x, y in positions_6:
+    sides = 4
+    side_length = 50
+    color = colors[2]
     pen_size = rng.randint(1, 7)
-    angle = rng.randint(0, 359)
-    polygon = Polygon(x, y, sides, side_length, color, pen_size, angle)
+    angle = 0
+
+    polygon = Polygon(
+        x, y, sides, side_length,
+        color, pen_size, angle
+    )
+
+    polygon.draw()
+    polygons.append(polygon)
+    
+for x, y in positions_7:
+    sides = 4
+    side_length = 50
+    color = colors[5]
+    pen_size = rng.randint(1, 7)
+    angle = 0
+
+    polygon = Polygon(
+        x, y, sides, side_length,
+        color, pen_size, angle
+    )
+
     polygon.draw()
     polygons.append(polygon)
 

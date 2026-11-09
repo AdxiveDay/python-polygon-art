@@ -20,3 +20,7 @@ The first program creates static overlapping polygon artwork; the second animate
 
 Only submit this student project folder to a **public GitHub repository** and submit the repository URL.
 Do not include instructor solutions.
+
+student part
+for art style, I use the iconic meme of the year as a "67" and create it with turtle combine all of it with different shapes
+also with animation I also combine it with 67 style
